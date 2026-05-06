@@ -1,4 +1,13 @@
 [![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/iA_HXS2O)
+
+# Bigger May Be Better: Leveraging Sentence Transformer Embedding Models for Review Classification
+### By: Portia Cooper
+
+**Summary:** I am using the standard sklearn logistic regression model in conjunction with a sentence transformer embedding model, selected to maximize F1-score. Additionally, I perform data preprocessing to remove any HTML noise and apply a final prediction correction technique by converting labels for non-English text to 0 (not a review) based on my observations of the training data.
+
+## Usage
+To run the full train and test pipeline, launch the Docker image using docker build it using `docker build -t portia-cooper-final .` and run it using `docker run -it -p 7777:9999 -v "$PWD:/app/" portia-cooper-final:latest and open the review_classifier_model.ipynb`. Data is stored in the /data folder and the final predictions will be saved there.
+
 # Task
 
 The task is described at [https://uazhlt-ms-program.github.io/ling-539-competition-2026/assignments/class-competition/](https://uazhlt-ms-program.github.io/ling-539-competition-2026/assignments/class-competition/)
